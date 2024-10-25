@@ -193,7 +193,7 @@ function Bid() {
   useEffect(() => {
     // Only establish the socket connection if it doesn't exist
     if (!socketRef.current) {
-      socketRef.current = io("http://localhost:8081"); // Establish connection
+      socketRef.current = io("https://prestigekoiauction.freeddns.org:8081"); // Establish connection
     }
 
     const socket = socketRef.current; // Access the stable socket

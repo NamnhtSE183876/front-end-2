@@ -264,7 +264,7 @@ const AddLots = ({ setLots, auctionTypeName, lots }) => {
     const fetchFishData = async () => {
       try {
         const response = await axios.post(
-          "http://localhost:8080/manager/get-fish-auction",
+          "https://prestigekoiauction.freeddns.org:8443/manager/get-fish-auction",
           { auctionTypeName },
           {
             headers: {
