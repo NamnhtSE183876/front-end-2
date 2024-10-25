@@ -17,6 +17,7 @@ import AddRequestPage from "./features/breeder/pages/AddRequestPage.jsx";
 import BreederProfilePage from "./features/breeder/pages/BreederProfilePage.jsx";
 import BreederProfileDetails from "./features/breeder/components/BreederProfileDetails.jsx";
 import BreederRequest from "./features/breeder/components/BreederRequest.jsx";
+import DepositSuccess from './features/bid/components-bid/depositSuccess.jsx'; // Import component DepositSuccess
 
 export default function App() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
           <Route path="/auction" element={<Auction />} />
           <Route path="/lot/:auctionId" element={<Lot />} />
           <Route path="/bid/:lotId/:auctionId" element={<Bid />} />
+          <Route path="/deposit-success" element={<DepositSuccess />} />
           <Route path="/payment/:lotId" element={<Payment />} />
           <Route path="/auctioned" element={<PastAuction />} />
           <Route path="/forgotPass" element={<ForgotPassPage />} />
